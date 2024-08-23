@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarContentCollectionSubCell" id="gTV-IL-0wX" customClass="SimilarContentCollectionViewCell" customModule="MovieDBTraining3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="146"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-be-yKi">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="390-Yv-EI1"/>
+                            <constraint firstAttribute="width" constant="90" id="bnW-q0-bT6"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="dOv-qF-uzl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman: The Dark Knight Rises" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6b-lw-gYy">
+                        <rect key="frame" x="0.0" y="130" width="90" height="16"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="b5l-to-ksa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="p6b-lw-gYy" firstAttribute="top" secondItem="Kmd-be-yKi" secondAttribute="bottom" id="7rR-9k-cJ9"/>
+                <constraint firstItem="Kmd-be-yKi" firstAttribute="leading" secondItem="p6b-lw-gYy" secondAttribute="leading" id="Bad-hw-rWs"/>
+                <constraint firstItem="Kmd-be-yKi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ts0-Hn-1ZX"/>
+                <constraint firstAttribute="trailing" secondItem="Kmd-be-yKi" secondAttribute="trailing" id="WAt-ZQ-Ptr"/>
+                <constraint firstItem="Kmd-be-yKi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dk1-Pa-rAY"/>
+                <constraint firstItem="Kmd-be-yKi" firstAttribute="trailing" secondItem="p6b-lw-gYy" secondAttribute="trailing" id="pan-5A-8iv"/>
+                <constraint firstItem="Kmd-be-yKi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tAY-O8-5p9"/>
+                <constraint firstAttribute="bottom" secondItem="p6b-lw-gYy" secondAttribute="bottom" id="vCg-yx-U2m"/>
+            </constraints>
+            <connections>
+                <outlet property="similarContentImage" destination="Kmd-be-yKi" id="ouw-P7-jX2"/>
+                <outlet property="similarContentName" destination="p6b-lw-gYy" id="nnA-um-I3Z"/>
+            </connections>
+            <point key="canvasLocation" x="71.755725190839698" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="noPhoto" width="480" height="360"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

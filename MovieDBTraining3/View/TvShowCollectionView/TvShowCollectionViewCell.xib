@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainIdentifier" id="gTV-IL-0wX" customClass="TvShowCollectionViewCell" customModule="MovieDBTraining3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="181"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="181"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ldW-lr-LqJ">
+                        <rect key="frame" x="0.0" y="38" width="295" height="148"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hep-aO-AJs">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Populer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3S-lY-Krc">
+                        <rect key="frame" x="9" y="0.0" width="120" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="cOM-aq-Sw9"/>
+                            <constraint firstAttribute="height" constant="33" id="qlc-c5-2iz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="b3S-lY-Krc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="HOu-t7-bcb"/>
+                <constraint firstAttribute="bottom" secondItem="ldW-lr-LqJ" secondAttribute="bottom" constant="-5" id="LJv-H4-EY8"/>
+                <constraint firstItem="b3S-lY-Krc" firstAttribute="leading" secondItem="ldW-lr-LqJ" secondAttribute="leading" constant="9" id="TPX-kR-QNy"/>
+                <constraint firstItem="b3S-lY-Krc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XtK-t6-ozE"/>
+                <constraint firstItem="ldW-lr-LqJ" firstAttribute="top" secondItem="b3S-lY-Krc" secondAttribute="bottom" constant="5" id="krb-s9-C0P"/>
+                <constraint firstItem="ldW-lr-LqJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wuG-3m-dTo"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="ldW-lr-LqJ" id="gan-d6-ngm"/>
+                <outlet property="tvSectionTextLabel" destination="b3S-lY-Krc" id="1iX-eJ-2Cu"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.619718309859156"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
